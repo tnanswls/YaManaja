@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E0F4FF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcomeMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#0092E0"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="약속잡자"
+                android:layout_marginLeft="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#0092E0"
+                android:textSize="25sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/xml_round_white_box"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/timeset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:onClick="onClick"
+                    android:padding="0dp"
+                    android:src="@drawable/timeset"
+                    android:text="@string/time_set"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/time_set"
+                    android:textColor="#0092E0"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:gravity="top|center"
+                android:padding="10dp"
+                android:background="@drawable/xml_round_white_box"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/placeset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:onClick="onClick"
+                    android:padding="0dp"
+                    android:src="@drawable/placeset"
+                    android:text="@string/place_set"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/place_set"
+                    android:textColor="#0092E0"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="InefficientWeight,NestedWeights" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

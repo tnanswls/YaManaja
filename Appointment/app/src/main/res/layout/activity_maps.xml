@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:id="@+id/linearLayout"
+        android:baselineAligned="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:src="@drawable/right_arrow"/>
+        <EditText
+            android:id="@+id/etLocationEntry"
+            android:layout_width="215dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="6dp"
+            android:background="@null"
+            android:hint="목적지를 입력하세요."
+            android:imeOptions="actionSearch"
+            android:maxWidth="10dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btSearch"
+            android:layout_width="50dp"
+            android:layout_marginRight="3dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_round_button"
+            android:onClick="geoLocate"
+            android:src="@drawable/ic_search"
+            android:text="검색쓰"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_round_button"
+            android:text="고쓰"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="385dp"
+        android:layout_height="563dp"
+        android:layout_below="@+id/linearLayout"
+        tools:context="successgraduate.appointment.Maps" />
+    <Button
+        android:id="@+id/btMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:background="@drawable/xml_round_button"
+        android:id="@+id/btClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <ZoomControls
+        android:id="@+id/zcZoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btMark"
+        android:layout_alignParentRight="true">
+
+    </ZoomControls>
+
+</RelativeLayout>

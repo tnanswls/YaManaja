@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">야! 만나자</string>
+    <string name="time_set">언제봐?</string>
+    <string name="place_set">어디서봐?</string>
+    <string name="searchfriend">친구야!</string>
+    <string name="search">친구검색</string>
+    <string name="ID">친구야!</string>
+    <string name="시작일">시작일</string>
+    <string name="종료일">종료일</string>
+    <string name="약속기간을_선택하세요">약속기간을 선택하세요</string>
+    <string name="시작일을_선택하세요">시작일을 선택하세요</string>
+    <string name="종료일을_선택하세요">종료일을 선택하세요</string>
+    <string name="ok">확   인</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="email">이메일 입력</string>
+    <string name="password">비밀번호 입력</string>
+    <string name="passwordconfirm">비밀번호 확인</string>
+    <string name="register">회원가입</string>
+    <string name="login">로그인</string>
+    <string name="cancel">취소</string>
+    <string name="welcome">환영합니다!</string>
+    <string name="idcheck">중복체크</string>
+    <string name="group">그룹명을 입력하세요</string>
+    <string name="groupname">그룹명</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBPIvD7Q8z2AwANlCKQZHehTAPZht1j3pQ</string>
+    <string name="searchName">searchname</string>
+</resources>

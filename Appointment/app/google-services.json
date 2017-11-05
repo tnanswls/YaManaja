@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "531460399332",
+    "firebase_url": "https://appointment-2a4c5.firebaseio.com",
+    "project_id": "appointment-2a4c5",
+    "storage_bucket": "appointment-2a4c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531460399332:android:9338707fd1bf48d7",
+        "android_client_info": {
+          "package_name": "successgraduate.appointment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531460399332-soohdf38u5uik8l8in4u0u8tc6mr82kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7GKbvtqBcsv_g1W2bRxgvQIjvPDaCFRs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

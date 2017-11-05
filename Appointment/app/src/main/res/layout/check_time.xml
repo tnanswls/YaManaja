@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#E0F4FF"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin">
+
+
+<TextView
+    android:id="@+id/startDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:textColor="#0092E0"
+    android:textStyle="bold"
+    android:typeface="monospace"
+    android:textSize="12pt"/>
+
+<TextView
+    android:id="@+id/dateText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/startDate"
+    android:text="설정기간" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_below="@+id/dateText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="약속잡기 가능한 시간 터치\n" />
+
+<TableLayout
+    android:id="@+id/table"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:layout_below="@+id/textView3">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  />
+
+        <TextView
+            android:text="10-12"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  />
+        <TextView
+            android:text="12-14"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  />
+        <TextView
+            android:text="14-16"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  />
+        <TextView
+            android:text="16-18"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  />
+        <TextView
+            android:text="18-20"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  />
+        <TextView
+            android:text="20-22"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"  />
+    </TableRow>
+</TableLayout>
+<Button
+    android:id="@+id/timeFinalbtn"
+    android:background="@drawable/xml_round_button"
+    android:textColor="#FFFFFF"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:onClick="onClick"
+    android:typeface="monospace"
+    android:text="@string/ok"
+    android:layout_width="150dip"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"/>
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/table"
+    android:layout_alignParentStart="true">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableLayout
+            android:id="@+id/store_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/startDate">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+
+</ScrollView>
+
+
+</RelativeLayout>
